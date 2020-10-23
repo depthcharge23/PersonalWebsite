@@ -31,14 +31,10 @@ body {
 
 /* Component styles */
 
-.list {
-    list-style: none;
-}
-
-.skills {
+.skills, .socials {
     font-size: 3em;
 }
 
-.skill-item {
+.icon {
     padding: 20px;
 }
