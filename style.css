@@ -3,9 +3,14 @@ body {
 }
 
 /* Layout styles */
-.block {
+.block-l {
     display: block;
     float: left;
+}
+
+.block-r {
+    display: block;
+    float: right;
 }
 
 .row {
@@ -37,4 +42,9 @@ body {
 
 .icon {
     padding: 20px;
+}
+
+.nav-item {
+    padding: 20px;
+    font-weight: bold;
 }
