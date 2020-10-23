@@ -34,3 +34,11 @@ body {
 .list {
     list-style: none;
 }
+
+.skills {
+    font-size: 3em;
+}
+
+.skill-item {
+    padding: 20px;
+}
