@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Turret+Road:wght@700&family=Ubuntu&display=swap');
+
 body {
     margin: 0 20%;
+}
+
+h1 {
+    font-family: 'Turret Road', cursive;
+}
+
+h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Layout styles */
@@ -35,6 +49,11 @@ body {
 }
 
 /* Component styles */
+
+#nav-bar {
+    font-family: 'Turret Road', cursive;
+    font-size: 0.9em;
+}
 
 .skills, .socials {
     font-size: 3em;
