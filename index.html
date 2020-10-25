@@ -2,96 +2,141 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Aaron Mathews</title>
         <link href="./style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/af1b56b44c.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="block-l row">
-            <h1 class="block-l w-1-2">Aaron Mathews</h1>
-            <nav id="nav-bar" class="block-r w-1-2">
-                <ul class="list">
-                    <li class="block-r nav-item">Contact</li>
-                    <li class="block-r nav-item">Skills</li>
-                    <li class="block-r nav-item">Projects</li>
-                    <li class="block-r nav-item">About Me</li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="section navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <h1 class="navbar-brand">Aaron Mathews</h1>
+
+            <div class="ml-auto">
+                <!-- Hamburger toggler for small screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar list items -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            
+        <div class="container">
+            <section class="section row">
+                <article class="col-8">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi my name is Aaron. I am a Full Stack Engineer based out of the Greater Seattle Area. I enjoy building
+                        websites and learning new programming techniques.
+                    </p>
+                    <p>
+                        I currently develop software for Costco Wholesale, but I am interested in getting into the freelance development
+                        space. I have experience developing apps in an Agile environment, providing backend and frontend solutions for our business.
+                    </p>
+                    <p>
+                        In my free time I like to play video games, hang out with friends, eat good food, and do a little bit of photography. My favorite
+                        things to photograph are people and landscapes. I am also a huge foodie and love to cook new things whenever I get the chance.
+                    </p>
+                </article>
+                <div class="col-4">
+                    <img class="personal-photo rounded mx-auto d-block" src="./IMG_1207.jpg" alt="A portait photo of me." />
+                </div>
+            </section>
+    
+            <section class="section">
+                <div class="row">
+                    <div class="col">
+                        <h2>Projects</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <article class="col-4">
+                        <h3>Kanto Pokedex App</h3>
+                        <p>
+                            The Kanto Pokedex project was a personal project I wanted to work on. The idea was to scrape
+                            Pokemon data from the website, Bulbapedia, and display it in a pokedex format.
+                        </p>
+                        <p>
+                            The front-end section of the app was created in React with the help of Bootstrap. The back-end was
+                            created in NodeJS using the ExpressJS server framework. All of the data was scraped off of Bulbapedia
+                            using Python and the Beautiful Soup library. The data was loaded into a MongoDB instance. The app was hosted
+                            on Microsoft Azure.
+                        </p>
+                    </article>
         
-        <section class="block-l row">
-            <article class="block-l w-2-3">
-                <h2>About Me</h2>
-                <p>
-                    Hi my name is Aaron. I am a Full Stack Engineer based out of the Greater Seattle Area. I enjoy building
-                    websites and learning new programming techniques.
-                </p>
-                <p>
-                    I currently develop software for Costco Wholesale, but I am interested in getting into the freelance development
-                    space. I have experience developing apps in an Agile environment, providing backend and frontend solutions for our business.
-                </p>
-                <p>
-                    In my free time I like to play video games, hang out with friends, eat good food, and do a little bit of photography. My favorite
-                    things to photograph are people and landscapes. I am also a huge foodie and love to cook new things whenever I get the chance.
-                </p>
-            </article>
-            <img class="image block-l w-1-3" src="./IMG_1207.jpg" alt="A portait photo of me." />
-        </section>
+                    <article class="col-4">
+                        <h3>Project 2</h3>
+                        <p>Project 2 blah blah blah.</p>
+                    </article>
+        
+                    <article class="col-4">
+                        <h3>Project 3</h3>
+                        <p>Project 3 blah blah blah.</p>
+                    </article>
+                </div>
+            </section>
+    
+            <section class="section">
+                <div class="row">
+                    <div class="col">
+                        <h2>Skills</h2>
+                    </div>
+                </div>
 
-        <section class="block-l row">
-            <h2>Projects</h2>
-            <article class="block-l w-1-3">
-                <h3>Kanto Pokedex App</h3>
-                <p>
-                    The Kanto Pokedex project was a personal project I wanted to work on. The idea was to scrape
-                    Pokemon data from the website, Bulbapedia, and display it in a pokedex format.
-                </p>
-                <p>
-                    The front-end section of the app was created in React with the help of Bootstrap. The back-end was
-                    created in NodeJS using the ExpressJS server framework. All of the data was scraped off of Bulbapedia
-                    using Python and the Beautiful Soup library. The data was loaded into a MongoDB instance. The app was hosted
-                    on Microsoft Azure.
-                </p>
-            </article>
+                <div class="row">
+                    <div class="col">
+                        <div class="skills">
+                            <i class="fab fa-html5 icon"></i>
+                            <i class="fab fa-css3-alt icon"></i>
+                            <i class="fab fa-js icon"></i>
+                            <i class="fab fa-react icon"></i>
+                            <i class="fab fa-node icon"></i>
+                            <i class="fab fa-github icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section row">
+                <div class="col">
+                    <h2>Contact</h2>
+                    <p>Feel free to reach out if you are interested in working together!</p>
+                    <div class="socials">
+                        <i class="fab fa-linkedin icon"></i>
+                        <i class="fab fa-github icon"></i>
+                        <i class="fab fa-twitch icon"></i>
+                        <i class="fas fa-envelope icon"></i>
+                    </div>
+                </div>
+            </section>
+    
+            <footer class="section row">
+                <div class="col">
+                    <p>Made by Aaron Mathews</p>
+                </div>
+            </footer>
+        </div>
 
-            <article class="block-l w-1-3">
-                <h3>Project 2</h3>
-                <p>Project 2 blah blah blah.</p>
-            </article>
-
-            <article class="block-l w-1-3">
-                <h3>Project 3</h3>
-                <p>Project 3 blah blah blah.</p>
-            </article>
-        </section>
-
-        <section class="block-l row">
-            <h2>Skills</h2>
-            <div class="skills">
-                <i class="fab fa-html5 icon"></i>
-                <i class="fab fa-css3-alt icon"></i>
-                <i class="fab fa-js icon"></i>
-                <i class="fab fa-react icon"></i>
-                <i class="fab fa-node icon"></i>
-                <i class="fab fa-github icon"></i>
-            </div>
-        </section>
-
-        <section class="block-l row">
-            <h2>Contact</h2>
-            <p>Feel free to reach out if you are interested in working together!</p>
-            <div class="socials">
-                <i class="fab fa-linkedin icon"></i>
-                <i class="fab fa-github icon"></i>
-                <i class="fab fa-twitch icon"></i>
-                <i class="fas fa-envelope icon"></i>
-            </div>
-        </section>
-
-        <footer class="block-l row">
-            <p>Made by Aaron Mathews</p>
-        </footer>
-
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="./script.js"></script>
     </body>
 </html>
