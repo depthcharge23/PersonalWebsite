@@ -1,4 +1,5 @@
 const ACTIVE_PROJECT = "kanto-pokedex";
+const HEADER_OFFSET = 60;
 
 const setActiveProject = () => {
     const projects = document.querySelectorAll(".project");
@@ -53,9 +54,35 @@ const setProjectListOnClick = () => {
     }
 };
 
+const scrollTo = (e) => {
+    e.preventDefault();
+
+    const sectionId = e.target.innerHTML.split(" ").join("-").toLowerCase() + "-section";
+    const element = document.getElementById(sectionId);
+    const bodyPosition = document.body.getBoundingClientRect().top;
+    const elementPosition = element.getBoundingClientRect().top;
+    const elementRect = elementPosition - bodyPosition;
+    const offsetPosition = elementRect - HEADER_OFFSET;
+
+    window.scrollTo({
+        "top": offsetPosition,
+        "behavior": "smooth"
+    });
+    
+};
+
+const setScrollTo = () => {
+    const navLinks = document.getElementsByClassName("nav-link");
+
+    for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].onclick = scrollTo;
+    }
+};
+
 const initializationFunc = () => {
     setActiveProject();
     setProjectListOnClick();
+    setScrollTo();
 };
 
 window.onload = initializationFunc;
