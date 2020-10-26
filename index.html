@@ -21,7 +21,7 @@
                 <!-- Navbar list items -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">About Me</a>
                         </li>
                         <li class="nav-item">
@@ -130,10 +130,18 @@
                     <h2>Contact</h2>
                     <p>Feel free to reach out if you are interested in working together!</p>
                     <div class="socials">
-                        <i class="fab fa-linkedin icon"></i>
-                        <i class="fab fa-github icon"></i>
-                        <i class="fab fa-twitch icon"></i>
-                        <i class="fas fa-envelope icon"></i>
+                        <a href="https://www.linkedin.com/in/aaron-mathews-953408150/" target="_blank">
+                            <i class="fab fa-linkedin icon"></i>
+                        </a>
+                        <a href="https://github.com/depthcharge23" target="_blank">
+                            <i class="fab fa-github icon"></i>
+                        </a>
+                        <a href="https://www.twitch.tv/depthcharge23" target="_blank">
+                            <i class="fab fa-twitch icon"></i>
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#contact-modal">
+                            <i class="fas fa-envelope icon"></i>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -143,6 +151,23 @@
                     <p>Made by Aaron Mathews</p>
                 </div>
             </footer>
+        </div>
+
+        <div id="contact-modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Contact Me</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Feel free to reach out to me to send me an email if you are interested in working together!</p>
+                        <p><strong>Email:</strong> aamathews23@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -23,6 +23,14 @@ p {
     font-size: 3em !important;
 }
 
+.socials > a {
+    color: black;
+}
+
+.socials > a:hover {
+    color: gray;
+}
+
 .icon {
     padding: 20px;
 }
