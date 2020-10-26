@@ -57,3 +57,7 @@ p {
     background-color: black !important;
     color: white;
 }
+
+.list-group-item:hover {
+    cursor: pointer;
+}

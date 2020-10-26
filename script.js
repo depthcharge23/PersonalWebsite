@@ -1,10 +1,13 @@
+// Global Variables
 const ACTIVE_PROJECT = "kanto-pokedex";
 const HEADER_OFFSET = 60;
 
+// Sets the active project based on the ACTIVE_PROJECT variable
 const setActiveProject = () => {
     const projects = document.querySelectorAll(".project");
     const projectLinks = document.querySelectorAll(".list-group-item");
 
+    // Loops through the links setting the ACTIVE_PROJECT to selected
     projectLinks.forEach(link => {
         const message = link.innerHTML.split(" ").join("-").toLowerCase();
 
@@ -13,6 +16,7 @@ const setActiveProject = () => {
         }
     });
 
+    // Hides all of the sections that are not associated to the ACTIVE_PROJECT
     projects.forEach(project => {
         if (project && project.id) {
             if (project.id !== ACTIVE_PROJECT) {
@@ -24,16 +28,19 @@ const setActiveProject = () => {
     });
 };
 
+// Selects the project that the user has clicked, while deselecting any other projects.
 const setSelectedProject = (e) => {
     const messageId = e.target.innerHTML.split(" ").join("-").toLowerCase();
     
     const projects = document.querySelectorAll(".project");
     const projectLinks = document.querySelectorAll(".list-group-item");
 
+    // Deselects projects
     projectLinks.forEach(link => {
         link.classList.remove("selected");
     });
 
+    // Selects the project the user clicked
     projects.forEach(child => {
         if (child && child.id) {
             if (child.id !== messageId) {
@@ -46,6 +53,7 @@ const setSelectedProject = (e) => {
     });
 };
 
+// Give the elements with a class of "list-group-item" the onclick event of setSelectedProject
 const setProjectListOnClick = () => {
     const elements = document.getElementsByClassName("list-group-item");
 
@@ -54,6 +62,7 @@ const setProjectListOnClick = () => {
     }
 };
 
+// Scroll to the associated section on the webpage
 const scrollTo = (e) => {
     e.preventDefault();
 
@@ -71,6 +80,7 @@ const scrollTo = (e) => {
     
 };
 
+// Assign the scrollTo function to the navigation links in the nav bar
 const setScrollTo = () => {
     const navLinks = document.getElementsByClassName("nav-link");
 
@@ -79,6 +89,7 @@ const setScrollTo = () => {
     }
 };
 
+// Call all of the initailization functions
 const initializationFunc = () => {
     setActiveProject();
     setProjectListOnClick();
