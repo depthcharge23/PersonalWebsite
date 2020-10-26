@@ -21,6 +21,7 @@ p {
 
 .skills, .socials {
     font-size: 3em !important;
+    color: black;
 }
 
 .socials > a {
