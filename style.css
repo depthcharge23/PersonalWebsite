@@ -39,3 +39,12 @@ p {
 .section {
     padding: 30px 0px;
 }
+
+.center {
+    text-align: center;
+}
+
+.selected {
+    background-color: black !important;
+    color: white;
+}
